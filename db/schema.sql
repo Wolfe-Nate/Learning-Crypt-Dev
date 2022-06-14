@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS crypt_db
+CREATE DATABASE crypt_db
