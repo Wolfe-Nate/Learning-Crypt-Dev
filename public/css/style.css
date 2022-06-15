@@ -9,8 +9,8 @@
     --border-radius: 0.3rem;
 }
 
-.login {
+body {
+    background: url("https://source.unsplash.com/1600x900/?bitcoin");
     /* background-image: <img src="./public/images/assets/bankvault.png">; */
     /* background: url("https://source.unsplash.com/1600x900/?money"); */
-    background: url("https://source.unsplash.com/1600x900/?bitcoin");
-}
+} 
