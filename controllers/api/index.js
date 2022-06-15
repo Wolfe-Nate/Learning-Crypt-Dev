@@ -1,3 +1,6 @@
+const router = require("express").Router();
+module.exports = router;
+
 const express = require("express");
 
 const messageRouter = require("../../views/layout");
