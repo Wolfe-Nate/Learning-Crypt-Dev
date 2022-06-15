@@ -9,7 +9,7 @@
 5. [Gitignore](#gitignore-details)
 6. [Mock Up](#mock-up)
 7. [Technical Aspects](#technical-aspects)
-8. [Team Details](#team-details)
+8. [Team Members](#team-members)
 
 ## Description
 
@@ -36,13 +36,13 @@ The task is to create a restful API / full stack application. This application s
 
 ## Mock Up
 
-<img src="public/images/assets/WireFrameProj2.png">
+<img src="public/images/WireFrameProj2.png">
 
 ## Technical Aspects
 
-## Team Details
+## Team Members
 
-    Nate Wolfe
-    Keith MacNeil
-    Ryan Brisch
-    Rachel Kincaid
+    ✩Nate Wolfe✩
+    ✩Keith MacNeil✩
+    ✩Ryan Brisch✩
+    ✩Rachel Kincaid✩
