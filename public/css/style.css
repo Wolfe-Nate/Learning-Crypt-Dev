@@ -8,3 +8,9 @@
     --error: rgb(228, 46, 1);
     --border-radius: 0.3rem;
 }
+
+.login {
+    /* background-image: <img src="./public/images/assets/bankvault.png">; */
+    /* background: url("https://source.unsplash.com/1600x900/?money"); */
+    background: url("https://source.unsplash.com/1600x900/?bitcoin");
+}
