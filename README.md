@@ -1,4 +1,4 @@
-## Project 2 | Group 4
+## Project 2 | Group 4 | Crypt Keepers
 
 ## 💲 LEARNING CRYPT 💲
 
