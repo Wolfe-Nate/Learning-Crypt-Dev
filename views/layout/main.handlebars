@@ -11,7 +11,7 @@
 
 <body>
   <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
+    <header class="display-flex justify-space-between center-align p-2">
       <h1>
         <span role="img" aria-label="money">💸</span>
         <a href="/">&#128178 LEARNING CRYPT &#128178</a>
@@ -19,8 +19,8 @@
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/messageboard"> message board </a> |
-        <a href="/resources"> resources </a> |
+        <a href="/messageboard" class="btn waves-effect waves-green" > message board </a> |
+        <a href="/resources" class="btn waves-effect waves-green"> resources </a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
         <a href="/login">login</a>
