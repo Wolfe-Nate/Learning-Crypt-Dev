@@ -3,7 +3,7 @@ module.exports = router;
 
 const express = require("express");
 
-const messageRouter = require("../../views/layout");
+const messageRouter = require("");
 const app = express();
 
 app.use("../ve", messageRouter);
