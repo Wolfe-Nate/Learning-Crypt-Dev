@@ -1,103 +1,33 @@
-<html lang="en">
+{{#each table}}{{/each}}
 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Museum</title>
-    <link rel="stylesheet" type="text/css" href="../public/css/jass.css" />
-    <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <h1></h1>
-    </header>
-    <main>
-      <div class="col s12 m7">
-        <h2 class="header">{{{user-name}}}</h2>
-        <div class="card horizontal">
-          <div class="card-image">
-            <img
-              src="https://images.unsplash.com/photo-1630048421776-1f552787465d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
-            />
-          </div>
-          <div class="card-stacked">
-            <div class="card-content">
-              <p>{{{body}}}</p>
+  <div class="container center-align">
+
+      <nav>
+        <div id="navbar" class="nav-wrapper center-align light-green accent-3">
+        <a href="#" class="brand-logo">MessageBoard</di>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="C:\Users\keith\OneDrive\Desktop\test_mater\learning.html">LearningCenter</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+        <br>
+      </div>
+      
+      <main class="container center-align">
+        <div class="col s12 m7  center-align">
+          <h2 class="header white-text">{{{user-name}}}</h2>
+          <div class="card horizontal">
+           
+            <div class="card-stacked ">
+              <div class="card-content">
+                <p>{{{#}}}</p>
+              </div>
+              <!-- <div class="card-action"> -->
+                
+              </div>
             </div>
-            <div class="card-action">
-              <a href="#">Put Button for upvote here</a>
-            </div>
           </div>
-        </div>
-      </div>
-    </main>
-  </body>
-
-</html>
-
-{{!-- <div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Create a New Project:</h3>
-
-    <form class="form new-project-form">
-      <div class="form-group">
-        <label for="project-name">project name:</label>
-        <input
-          class="form-input"
-          type="text"
-          id="project-name"
-          name="project-name"
-        />
-      </div>
-      <div class="form-group">
-        <label for="project-funding">needed funding ($):</label>
-        <input
-          class="form-input"
-          type="number"
-          id="project-funding"
-          name="project-funding"
-        />
-      </div>
-      <div class="form-group">
-        <label for="project-desc">description:</label>
-        <textarea
-          class="form-input"
-          id="project-desc"
-          name="project-desc"
-        ></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </form>
-  </div>
-
-  {{#if projects.length}}
-    <div class="col-md-6 project-list">
-      <h3>Current Projects:</h3>
-
-      {{#each projects as |project|}}
-        <div class="row mb-2">
-          <div class="col-md-8">
-            <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
-          </div>
-          <div class="col-md-4">
-            <button
-              class="btn btn-sm btn-danger"
-              data-id="{{project.id}}"
-            >DELETE</button>
-          </div>
-        </div>
-      {{/each}}
-    </div>
-  {{/if}}
-</div>
-
-<script src="./js/login.js"></script> --}}
+          <a id="starButton" class="waves-effect  waves-light btn"><span class="material-symbols-outlined">grade</span></i>button</a>
+        </main>
+<script src="./js/message.js"></script>
