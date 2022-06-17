@@ -19,7 +19,7 @@ const basicsData = [
       "The advantages of cryptocurrencies include cheaper and faster money transfers and decentralized systems that do not collapse at a single point of failure.",
   },
   {
-    id: 3,
+    id: 4,
     name: "CONS",
     description:
       "The disadvantages of cryptocurrencies include their price volatility, high energy consumption for mining activities, and use in criminal activities.",
