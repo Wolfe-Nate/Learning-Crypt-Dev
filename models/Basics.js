@@ -3,7 +3,7 @@ const sequelize = require("../config/connection");
 
 class Basics extends Model {}
 
-Lexicon.init(
+Basics.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -38,7 +38,7 @@ Lexicon.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: "lexicon",
+    modelName: "basics",
   }
 );
 
