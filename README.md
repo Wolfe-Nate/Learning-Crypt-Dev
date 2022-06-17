@@ -10,6 +10,7 @@
 6. [Mock Up](#mock-up)
 7. [Technical Aspects](#technical-aspects)
 8. [Team Members](#team-members)
+9. [Resources](#resources)
 
 ## Description
 
@@ -46,3 +47,13 @@ The task is to create a restful API / full stack application. This application s
     ✩Keith MacNeil✩
     ✩Ryan Brisch✩
     ✩Rachel Kincaid✩
+
+## Resources
+
+https://coinmarketcap.com/alexandria/glossary
+
+https://blog.goodaudience.com/cryptocurrency-vocabulary-37fbdd7a3adb
+
+http://coingecko.com
+
+http://coinmarketcap.com
