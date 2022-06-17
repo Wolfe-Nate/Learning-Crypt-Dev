@@ -19,22 +19,6 @@ Basics.init(
         isUrl: true,
       },
     },
-<<<<<<< HEAD
-    description: {
-      type: DataTypes.STRING,
-      references: {
-        model: "user",
-        key: "id",
-      },
-    },
-    basics_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "basics",
-        key: "id",
-      },
-    },
-=======
     // description: {
     //   type: DataTypes.STRING,
     //   references: {
@@ -49,7 +33,6 @@ Basics.init(
     //     key: "id",
     //   },
     // },
->>>>>>> main
   },
   {
     sequelize,
