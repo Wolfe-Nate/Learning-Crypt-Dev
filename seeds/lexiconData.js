@@ -11,7 +11,7 @@ const lexiconData = [
     id: 2,
     name: "ATH",
     description:
-      "acronym – All-Time-High = “the highest price-point that a crypto currency has been.",
+      "acronym -- All-Time-High -- “the highest price-point that a crypto currency has been.",
   },
   {
     id: 3,
@@ -76,13 +76,13 @@ const lexiconData = [
     id: 13,
     name: "DYOR",
     description:
-      "acronym – 'Do Your Own Research' – encouraging investors to complete due diligence into a project before investing",
+      "acronym -- 'Do Your Own Research' -- encouraging investors to complete due diligence into a project before investing",
   },
   {
     id: 14,
     name: "ELI5",
     description:
-      "acronym – 'explain like I’m five' – request for simplicity when crypto concepts are being explained ",
+      "acronym -- 'explain like Im five' -- request for simplicity when crypto concepts are being explained ",
   },
   {
     id: 15,
@@ -100,13 +100,13 @@ const lexiconData = [
     id: 17,
     name: "FOMO",
     description:
-      "acronym – fear of missing out; as opposed to its opposite (antonym), JOMO (the joy of missing out) ",
+      "acronym -- fear of missing out; as opposed to its opposite (antonym), JOMO (the joy of missing out) ",
   },
   {
     id: 18,
     name: "FUD",
     description:
-      "acronym – Fear, Uncertainty, and Doubt – utilized to sway perception of the crypto market by spreading inaccurate information to mislead the general public. ",
+      "acronym -- Fear, Uncertainty, and Doubt -- utilized to sway perception of the crypto market by spreading inaccurate information to mislead the general public. ",
   },
   {
     id: 19,
@@ -123,19 +123,19 @@ const lexiconData = [
     id: 21,
     name: "HODL",
     description:
-      "acronym – Hold On For Dear Life - type of passive investment strategy where you hold an investment for a long period of time, regardless of any changes in the price or markets. ",
+      "acronym -- Hold On For Dear Life -- type of passive investment strategy where you hold an investment for a long period of time, regardless of any changes in the price or markets. ",
   },
   {
     id: 22,
     name: "ICO",
     description:
-      "acronym –  Initial Coin Offering –  type of crowdfunding  using cryptocurrencies as a means of raising capital. ",
+      "acronym --  Initial Coin Offering --  type of crowdfunding  using cryptocurrencies as a means of raising capital. ",
   },
   {
     id: 23,
     name: "KYC",
     description:
-      "acronym –  Know Your Customer (acronym) – these are checks that crypto exchanges and trading platforms must complete to verify the identity of their customers. ",
+      "acronym --  Know Your Customer (acronym) -- these are checks that crypto exchanges and trading platforms must complete to verify the identity of their customers. ",
   },
   {
     id: 24,
@@ -153,7 +153,7 @@ const lexiconData = [
     id: 26,
     name: "NFT",
     description:
-      "acronym – non-Fungible Token – cryptocurrencies that cannot can be traded or exchanged for one another. Generaly built using same kind of programming as cryptocurrencies like Bitcoin or Ethereum. ",
+      "acronym -- non-Fungible Token -- cryptocurrencies that cannot can be traded or exchanged for one another. Generaly built using same kind of programming as cryptocurrencies like Bitcoin or Ethereum. ",
   },
   {
     id: 27,
@@ -165,7 +165,7 @@ const lexiconData = [
     id: 28,
     name: "P2P",
     description:
-      "acronym – Peer-to-Peer – decentralized interactions between parties in a distributed network, partitioning tasks or workloads between peers. ",
+      "acronym -- Peer-to-Peer -- decentralized interactions between parties in a distributed network, partitioning tasks or workloads between peers. ",
   },
   {
     id: 29,

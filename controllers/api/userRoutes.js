@@ -2,6 +2,7 @@ const router = require("express").Router();
 const { User } = require("../../models");
 
 // CREATE/POST new user
+// to hit http://localhost:3001/api/users
 router.post("/", async (req, res) => {
   try {
     const dbUserData = await User.create({

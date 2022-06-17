@@ -42,6 +42,12 @@ const peopleData = [
     description:
       "Senegalese-American singer who has proposed to create “Akon City” in Senegal, a residential and commercial hub with its own cryptocurrency, Akoin. ",
   },
+  {
+    id: 8,
+    name: "Laszlo Hanyecz ",
+    description:
+      "The first transaction of Bitcoin was by this early contributor, he traded the 10,000 bitcoin to someone for an order of two delivered Papa John's pizzas. The modern day equivalent of $200 million ",
+  },
 ];
 
 const seedContent = () => Content.bulkCreate(peopleData);

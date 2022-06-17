@@ -3,7 +3,7 @@ const sequelize = require("../config/connection");
 
 class Basics extends Model {}
 
-Lexicon.init(
+Basics.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -19,26 +19,26 @@ Lexicon.init(
         isUrl: true,
       },
     },
-    description {
-      type: DataTypes.STRING,
-      references: {
-        model: "user",
-        key: "id",
-      },
-    },
-    basics_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "basics",
-        key: "id",
-      },
-    },
+    // description: {
+    //   type: DataTypes.STRING,
+    //   references: {
+    //     model: "user",
+    //     key: "id",
+    //   },
+    // },
+    // basics_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: "basics",
+    //     key: "id",
+    //   },
+    // },
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: "lexicon",
+    modelName: "basics",
   }
 );
 
