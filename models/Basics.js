@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Lexicon extends Model {}
+class Basics extends Model {}
 
 Lexicon.init(
   {
@@ -19,14 +19,17 @@ Lexicon.init(
         isUrl: true,
       },
     },
-    description: {
+    description {
       type: DataTypes.STRING,
-      allowNull: false,
+      references: {
+        model: "user",
+        key: "id",
+      },
     },
-    lexicon_id: {
+    basics_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: "lexicon",
+        model: "basics",
         key: "id",
       },
     },
@@ -39,4 +42,4 @@ Lexicon.init(
   }
 );
 
-module.exports = Lexicon;
+module.exports = Basics;

@@ -19,12 +19,9 @@ People.init(
         isUrl: true,
       },
     },
-    description {
+    description: {
       type: DataTypes.STRING,
-      references: {
-        model: "user",
-        key: "id",
-      },
+      allowNull: false,
     },
     people_id: {
       type: DataTypes.INTEGER,
@@ -38,7 +35,7 @@ People.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: "content",
+    modelName: "people",
   }
 );
 
