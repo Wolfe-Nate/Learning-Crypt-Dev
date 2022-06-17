@@ -9,10 +9,4 @@ router.use("/category", categoryRoutes);
 router.use("/content", contentRoutes);
 router.use("/vote", voteRoutes);
 
-// const express = require("express");
-
-// app.use("../ve", messageRouter);
-
-// module.exports = app;
-
 module.exports = router;
