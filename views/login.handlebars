@@ -1,42 +1,75 @@
-<div class="row" id="login">
-  <div class="col s12 m7">
-    <h2>Login</h2>
+<header>
+    <div class="col s2">
+            <img id="cryptImage" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e44cc313-3c9e-4f84-ae23-3a3b7fa1c6a0/de2bbff-aaf80200-0624-4104-9f40-eb2a0e2f98d3.jpg/v1/fill/w_1920,h_1916,q_75,strp/crypt_keeper_by_kerast_de2bbff-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkxNiIsInBhdGgiOiJcL2ZcL2U0NGNjMzEzLTNjOWUtNGY4NC1hZTIzLTNhM2I3ZmExYzZhMFwvZGUyYmJmZi1hYWY4MDIwMC0wNjI0LTQxMDQtOWY0MC1lYjJhMGUyZjk4ZDMuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.uZLNmKqOG0EAW1QK1FEsgIaGl92JroKngxwtnwbfkJg" alt="cryptkeeper" class="circle responsive-img" >
+            <h1>The<br />Learning<br />Crypt</h1>
+    </div>
+</header>
+    <section>
 
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
-      </div>
-    </form>
-  </div>
-  <div class="col s12 m7">
-    <h2>Signup</h2>
+        <div class="row" id="login">
+            <div class="col s12 m9 entry">
+                <h2>Login</h2>
+                
+                  <form>
+                    
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <input placeholder="Password" id="password" type="password" class="validate">
+                        <label for="password"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <input placeholder="Email" id="email" type="email" class="validate">
+                        <label for="email"></label>
+                        </div>
+                    </div>
+                    <a id="starButton" class="waves-effect  waves-light btn" type="submit" name="action">Login</a>
+                </form>
+            </div>
+        </div>
+    </section>
 
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="name-signup">name:</label>
-        <input class="form-input" type="text" id="name-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">email:</label>
-        <input class="form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">signup</button>
-      </div>
-    </form>
-  </div>
+
+
+    <section>
+        <div class="row" id="signup">
+            <div class="col s12 m9 entry">
+                <h2>Signup</h2>
+                <form>
+                    <div class="row">
+                        <div class="input-field col s6">
+                        <input placeholder="First Name" id="first_name" type="text" class="validate">
+                        <label for="first_name"></label>
+                        </div>
+                        <div class="input-field col s6">
+                        <input placeholder="Last Name" id="last_name" type="text" class="validate">
+                        <label for="last_name"></label>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <input placeholder="Password" id="password" type="password" class="validate">
+                        <label for="password"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <input placeholder="Email" id="email" type="email" class="validate">
+                        <label for="email"></label>
+                        </div>
+                    </div>
+                    <a href="#!" id="starButton" class="btn waves-effect  waves-red" type="submit" name="action">SignUp</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <aside class="right hide-on-med-and-down">
+        <img src="./assets/cryptocurrency.jpg" id="logCryptImg"> 
+    </aside>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </div>
 
 <script src="/public/js/login.js"></script>
