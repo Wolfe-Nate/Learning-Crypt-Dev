@@ -1,16 +1,88 @@
 :root {
-    --primary: #3d5852;
-    --secondary: #86938f;
-    --tertiary: #5e877f;
-    --quatrinary: #6c6b67;
-    --light: #e3e4e3;
-    --dark: #182c23;
-    --error: rgb(228, 46, 1);
-    --border-radius: 0.3rem;
+  --primary: #3d5852;
+  --secondary: #86938f;
+  --tertiary: #5e877f;
+  --quatrinary: #6c6b67;
+  --light: #e3e4e3;
+  --dark: #182c23;
+  --error: rgb(228, 46, 1);
+  --border-radius: 0.3rem;
 }
 
 body {
-    background: url("https://source.unsplash.com/1600x900/?bitcoin");
-    /* background-image: <img src="./public/images/assets/bankvault.png">; */
-    /* background: url("https://source.unsplash.com/1600x900/?money"); */
-} 
+  background: url("https://source.unsplash.com/1600x900/?bitcoin");
+  /* background-image: <img src="./public/images/assets/bankvault.png">; */
+  /* background: url("https://source.unsplash.com/1600x900/?money"); */
+}
+
+body {
+  background: rgb(251, 227, 63);
+  background: radial-gradient(
+    circle,
+    rgba(251, 227, 63, 1) 0%,
+    rgba(13, 1, 1, 1) 100%
+  );
+}
+
+main {
+  background-image: url("https://images.unsplash.com/photo-1609726494499-27d3e942456c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.entry {
+  margin: 2rem;
+  font-family: "Joan", serif;
+  text-align: center;
+  border-radius: 2%;
+  box-shadow: 0rem 0rem 1rem 0rem rgb(0, 0, 0);
+}
+
+#cryptImage {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  z-index: -1;
+  box-shadow: 0rem 0rem 1rem 0rem rgb(0, 0, 0);
+}
+
+#navbar {
+  background: rgb(65, 58, 13);
+  background: radial-gradient(
+    circle,
+    rgba(65, 58, 13, 1) 0%,
+    rgba(13, 1, 1, 1) 100%
+  );
+  font-family: "Federant", cursive;
+  z-index: 1;
+}
+
+.starButton {
+  margin: 25px 25px 25px 25px;
+}
+
+h1 {
+  font-size: 10vw;
+  font-family: "Federant", cursive;
+  font-weight: 900;
+  text-shadow: 2px 2px 7px #ff0000;
+  text-align: center;
+}
+
+#logCryptImg {
+  position: absolute;
+  top: 20rem;
+  right: 25rem;
+  float: right;
+  width: 20rem;
+  height: 55rem;
+  z-index: -1;
+  box-shadow: 0rem 0rem 1rem 0rem rgb(0, 0, 0);
+  border-radius: 20%;
+}
+
+.input-field label {
+  color: #000;
+}
