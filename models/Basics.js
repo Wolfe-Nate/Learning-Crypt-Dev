@@ -19,13 +19,13 @@ Basics.init(
         isUrl: true,
       },
     },
-    description: {
-      type: DataTypes.STRING,
-      references: {
-        model: "user",
-        key: "id",
-      },
-    },
+    // description: {
+    //   type: DataTypes.STRING,
+    //   references: {
+    //     model: "user",
+    //     key: "id",
+    //   },
+    // },
     // basics_id: {
     //   type: DataTypes.INTEGER,
     //   references: {
