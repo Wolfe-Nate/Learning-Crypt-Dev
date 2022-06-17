@@ -35,21 +35,21 @@ const withAuth = require("../utils/auth");
 // GET for all learning articles for homepage
 router.get("/", async (req, res) => {
   try {
-    const learningData = await Learning.findAll({
-      include: [
-        {
-          model: Learning,
-          attributes: ["title", "filename", "urlAddress"],
-        },
-      ],
-    });
+    // const learningData = await Learning.findAll({
+    //   include: [
+    //     {
+    //       model: Learning,
+    //       attributes: ["title", "filename", "urlAddress"],
+    //     },
+    //   ],
+    // });
 
-    const learnings = learningData.map((learning) =>
-      learning.get({ plain: true })
-    );
+    // const learnings = learningData.map((learning) =>
+    //   learning.get({ plain: true })
+    // );
 
     res.render("homepage", {
-      learnings,
+      // learnings,
       loggiedIn: req.session.loggedIn,
     });
   } catch (err) {
