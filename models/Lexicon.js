@@ -19,7 +19,7 @@ Lexicon.init(
         isUrl: true,
       },
     },
-    description {
+    description: {
       type: DataTypes.STRING,
       references: {
         model: "user",
