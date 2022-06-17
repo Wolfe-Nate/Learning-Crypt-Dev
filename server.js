@@ -1,6 +1,11 @@
 const path = require("path");
 const express = require("express");
-const router = require("./controllers/index");
+// const routes = require("./controllers");
+// const router = require("./controllers/index");
+const User = require("./models/User");
+const Content = require("./models/Content");
+const Vote = require("./models/Vote");
+const Category = require("./models/Category");
 const session = require("express-session");
 const exphbs = require("express-handlebars");
 const helpers = require("./utils/helpers");
@@ -11,8 +16,7 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// app.use(routes);
 
 const hbs = exphbs.create({ helpers });
 
@@ -37,7 +41,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 // turns on routes
-app.use(router);
+// app.use(routes);
 
 // turns on connection to db and server
 sequelize.sync({ force: false }).then(() => {
