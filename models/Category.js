@@ -27,13 +27,13 @@ Category.init(
     crypto_tech: {
       type: DataTypes.BOOLEAN,
     },
-    content_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "content",
-        key: "id",
-      },
-    },
+    // content_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: "content",
+    //     key: "id",
+    //   },
+    // },
   },
   {
     sequelize,

@@ -23,13 +23,13 @@ Lexicon.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    lexicon_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "lexicon",
-        key: "id",
-      },
-    },
+    // lexicon_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: "lexicon",
+    //     key: "id",
+    //   },
+    // },
   },
   {
     sequelize,
