@@ -11,6 +11,6 @@ const Historydata = [
   },
 ];
 
-const seedHistory = () => Painting.bulkCreate(Historydata);
+const seedHistory = () => History.bulkCreate(Historydata);
 
 module.exports = seedHistory;
