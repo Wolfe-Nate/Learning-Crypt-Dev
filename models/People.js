@@ -23,13 +23,13 @@ People.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    people_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "people",
-        key: "id",
-      },
-    },
+    // people_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: "people",
+    //     key: "id",
+    //   },
+    // },
   },
   {
     sequelize,
