@@ -26,13 +26,13 @@ Basics.init(
         key: "id",
       },
     },
-    basics_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "basics",
-        key: "id",
-      },
-    },
+    // basics_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: "basics",
+    //     key: "id",
+    //   },
+    // },
   },
   {
     sequelize,
