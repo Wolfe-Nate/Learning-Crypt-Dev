@@ -15,20 +15,20 @@ Vote.init(
       type: DataTypes.INTEGER,
       allowNull: true,
     },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "user",
-        key: "id",
-      },
-    },
-    content_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "content",
-        key: "id",
-      },
-    },
+    // user_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: "user",
+    //     key: "id",
+    //   },
+    // },
+    // content_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: "content",
+    //     key: "id",
+    //   },
+    // },
   },
   {
     sequelize,
