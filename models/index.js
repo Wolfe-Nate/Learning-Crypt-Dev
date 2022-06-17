@@ -2,6 +2,9 @@ const User = require("./User");
 const Content = require("./Content");
 const Category = require("./Category");
 const Vote = require("./Vote");
+const Basics = require("./Basics");
+const Lexicon = require("./Lexicon");
+const People = require("./People");
 
 //content belongs to a user - one to one relationshiop
 // content is going to be the source model, pass to has one is the target model, the foreignKey is defined in the target model
@@ -37,4 +40,4 @@ const Vote = require("./Vote");
 //   },
 // });
 
-module.exports = { User, Content, Category, Vote };
+module.exports = { User, Content, Category, Vote, Basics, Lexicon, People };
