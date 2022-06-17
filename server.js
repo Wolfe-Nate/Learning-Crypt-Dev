@@ -2,7 +2,8 @@ const path = require("path");
 const express = require("express");
 // const routes = require("./controllers");
 // const router = require("./controllers/index");
-const User = require("./models/User");
+//changed User to user, capitals.
+const User = require("./models/user");
 const Content = require("./models/Content");
 const Vote = require("./models/Vote");
 const Category = require("./models/Category");
