@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { User } = require("../models");
+const { User, Content } = require("../models");
 const withAuth = require("../utils/auth");
 
 // // TODO: Add a comment describing the functionality of the withAuth middleware
@@ -35,21 +35,24 @@ const withAuth = require("../utils/auth");
 // GET for all learning articles for homepage
 router.get("/", async (req, res) => {
   try {
-    // const learningData = await Learning.findAll({
-    //   include: [
-    //     {
-    //       model: Learning,
-    //       attributes: ["title", "filename", "urlAddress"],
-    //     },
-    //   ],
-    // });
+    const contentData = await Content.findAll();
+
+    const contents = contentData.map((content) => content.get({ plain: true }));
+    //{
+    // include: [
+    //   {
+    //     model: Learning,
+    //     attributes: ["title", "filename", "urlAddress"],
+    //   },
+    // ],
+    //}
 
     // const learnings = learningData.map((learning) =>
     //   learning.get({ plain: true })
     // );
 
     res.render("homepage", {
-      // learnings,
+      contents,
       loggiedIn: req.session.loggedIn,
     });
   } catch (err) {

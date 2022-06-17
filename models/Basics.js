@@ -19,15 +19,6 @@ Basics.init(
         isUrl: true,
       },
     },
-<<<<<<< HEAD
-    description: {
-      type: DataTypes.STRING,
-      references: {
-        model: "user",
-        key: "id",
-      },
-    },
-=======
     // description: {
     //   type: DataTypes.STRING,
     //   references: {
@@ -35,7 +26,6 @@ Basics.init(
     //     key: "id",
     //   },
     // },
->>>>>>> 2e8381d34327670476f1844b14caa4f94d9dde3b
     // basics_id: {
     //   type: DataTypes.INTEGER,
     //   references: {
