@@ -29,29 +29,19 @@
           <a href="/">&#128178 LEARNING CRYPT &#128178</a>
         </h1>
         <nav>
-          <!-- Conditionally render login or logout links -->
-          {{#if logged_in}}
-            <a href="/messageboard" class="btn waves-effect waves-green">
-              message board
-            </a>
-            |
-            <a href="/resources" class="btn waves-effect waves-green">
-              resources
-            </a>
-            |
-            <button class="no-button" id="logout">logout</button>
+          <a href="/">Home</a>
+          {{#if loggedIn}}
+            <button id="logout" class="btn-no-style">Logout</button>
           {{else}}
-            <a href="/login">login</a>
+            <a href="/login">Login</a>
           {{/if}}
         </nav>
       </header>
       <main class="container container-fluid mt-5">
-        <!-- Render the sub layout -->
-        {{{body}}}
+        <div class="gallery">
+          {{{body}}}
+        </div>
       </main>
-      <footer>
-
-      </footer>
     </div>
 
     <!-- Render script for logged in users only -->
