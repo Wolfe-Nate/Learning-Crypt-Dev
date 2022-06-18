@@ -6,17 +6,17 @@ const Basics = require("./Basics");
 const Lexicon = require("./Lexicon");
 const People = require("./People");
 
-//content belongs to a user - one to one relationshiop
+// content belongs to a user - one to one relationshiop
 // content is going to be the source model, pass to has one is the target model, the foreignKey is defined in the target model
-// Content.hasOne(User, {
-//   foreignKey: "content_id",
-//   onDelete: "CASCADE",
-// });
+Content.hasOne(User, {
+  foreignKey: "content_id",
+  onDelete: "CASCADE",
+});
 
-// // Content has one categories
-// Content.hasOne(Category, {
-//   foreignKey: "content_id",
-// });
+// Content has one categories
+Content.hasOne(Category, {
+  foreignKey: "content_id",
+});
 
 // // user can have many content/posts = one to many relationship
 // User.hasMany(Content, {

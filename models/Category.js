@@ -14,26 +14,35 @@ Category.init(
     description: {
       type: DataTypes.STRING,
       allowNull: true,
+      primaryKey: true,
     },
-    bitcoin_focus: {
-      type: DataTypes.BOOLEAN,
-    },
-    eth_focus: {
-      type: DataTypes.BOOLEAN,
-    },
-    alt_coin: {
-      type: DataTypes.BOOLEAN,
-    },
-    crypto_tech: {
-      type: DataTypes.BOOLEAN,
-    },
-    // content_id: {
-    //   type: DataTypes.INTEGER,
-    //   references: {
-    //     model: "content",
-    //     key: "id",
-    //   },
+    // bitcoin_focus: {
+    //   type: DataTypes.BOOLEAN,
+    //   primaryKey: true,
+    //   allowNull: false,
     // },
+    // eth_focus: {
+    //   type: DataTypes.BOOLEAN,
+    //   primaryKey: true,
+    //   allowNull: false,
+    // },
+    // alt_coin: {
+    //   type: DataTypes.BOOLEAN,
+    //   primaryKey: true,
+    //   allowNull: false,
+    // },
+    // crypto_tech: {
+    //   type: DataTypes.BOOLEAN,
+    //   primaryKey: true,
+    //   allowNull: false,
+    // },
+    content_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "content",
+        key: "id",
+      },
+    },
   },
   {
     sequelize,
