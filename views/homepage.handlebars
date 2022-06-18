@@ -1,3 +1,14 @@
-{{#each learning as |learning|}}
-{{> learning.details}}
+ <a href="/">Home</a>
+    {{#if loggedIn}}
+    <button id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <a href="/login">Login</a>
+    {{/if}}
+ 
+ {{#each galleries as |gallery|}}
+{{> gallery-details}}
 {{/each}}
+{{!-- {{#each learning as |learning|}}
+
+{{> learning.details}}
+{{/each}} --}}
