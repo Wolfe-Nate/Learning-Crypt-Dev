@@ -36,7 +36,10 @@ router.get("/:id", async (req, res) => {
   try {
     const contentData = await Content.findByPk(req.params.id, {
       include: [{ model: Category }],
+    }).catch((err) => {
+      res.json(err);
     });
+
     res.status(200).json(contentData);
   } catch (err) {
     res.status(500).json(err);
@@ -44,10 +47,14 @@ router.get("/:id", async (req, res) => {
 });
 
 //POST new content
-// router.post("/", async (req, res) => {
-//     const contentData = await Content.create(req.body).then((content) => {
-//         if (req.body)
-//     })
-// })
+router.post("/", async (req, res) => {
+  try {
+    const contentData = await Content.create(req.body);
+    console.log(contentData);
+    res.status(200).json(contentData.get({ plain: true }));
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;
