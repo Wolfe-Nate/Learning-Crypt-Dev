@@ -53,7 +53,7 @@ router.get("/", async (req, res) => {
 
     res.render("homepage", {
       contents,
-      loggiedIn: req.session.loggedIn,
+      // loggiedIn: req.session.loggedIn,
     });
   } catch (err) {
     console.log(err);
