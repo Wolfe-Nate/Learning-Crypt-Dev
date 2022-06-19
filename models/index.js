@@ -1,6 +1,6 @@
 const User = require("./user");
 const Content = require("./Content");
-const Category = require("./Category");
+//const Category = require("./Category");
 const Vote = require("./Vote");
 // const Basics = require("./Basics");
 // const Lexicon = require("./Lexicon");
@@ -40,4 +40,4 @@ Content.hasOne(User, {
 //   },
 // });
 
-module.exports = { User, Content, Category, Vote };
+module.exports = { User, Content, Vote };
