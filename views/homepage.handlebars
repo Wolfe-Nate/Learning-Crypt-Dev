@@ -1,13 +1,38 @@
  <a href="/">Home</a>
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
+    <button id="messageboard" class="btn-no-style">Message Board</button>
     {{else}}
     <a href="/login">Login</a>
     {{/if}}
  
- {{#each galleries as |gallery|}}
+<div>
+  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Basics</div>
+      <div class="collapsible-body"><span>What is it? </span></div>
+    </li>
+
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>History</div>
+      <div class="collapsible-body"><span>How it all got started</span></div>
+    </li>
+
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>People</div>
+      <div class="collapsible-body"><span>Names with context </span></div>
+    </li>
+
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Lexicon</div>
+      <div class="collapsible-body"><span>Words with definition</span></div>
+    </li>    
+  </ul>
+</div>
+
+ {{!-- {{#each galleries as |gallery|}}
 {{> gallery-details}}
-{{/each}}
+{{/each}} --}}
 {{!-- {{#each learning as |learning|}}
 
 {{> learning.details}}
