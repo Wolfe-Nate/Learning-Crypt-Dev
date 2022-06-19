@@ -1,11 +1,7 @@
 const path = require("path");
 const express = require("express");
 const routes = require("./controllers");
-const router = require("./controllers/index");
-// const User = require("./models/User");
-const Content = require("./models/Content");
-const Vote = require("./models/Vote");
-const Category = require("./models/Category");
+
 const session = require("express-session");
 const exphbs = require("express-handlebars");
 const helpers = require("./utils/helpers");

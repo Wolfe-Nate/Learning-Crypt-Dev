@@ -2,18 +2,18 @@ const User = require("./user");
 const Content = require("./Content");
 const Category = require("./Category");
 const Vote = require("./Vote");
-const Basics = require("./Basics");
-const Lexicon = require("./Lexicon");
-const People = require("./People");
+// const Basics = require("./Basics");
+// const Lexicon = require("./Lexicon");
+// const People = require("./People");
 
-//content belongs to a user - one to one relationshiop
+// content belongs to a user - one to one relationshiop
 // content is going to be the source model, pass to has one is the target model, the foreignKey is defined in the target model
-// Content.hasOne(User, {
-//   foreignKey: "content_id",
-//   onDelete: "CASCADE",
-// });
+Content.hasOne(User, {
+  foreignKey: "content_id",
+  onDelete: "CASCADE",
+});
 
-// // Content has one categories
+// Content has one categories
 // Content.hasOne(Category, {
 //   foreignKey: "content_id",
 // });
@@ -40,4 +40,4 @@ const People = require("./People");
 //   },
 // });
 
-module.exports = { User, Content, Category, Vote, Basics, Lexicon, People };
+module.exports = { User, Content, Category, Vote };

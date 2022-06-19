@@ -1,42 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Federant&family=Gloria+Hallelujah&family=Joan&display=swap" rel="stylesheet">
-    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Federant&family=Gloria+Hallelujah&family=Joan&display=swap"
+      rel="stylesheet"
+    />
     <title>The Learning Crypt</title>
-    <link rel="stylesheet" type="text/css" href="/css/jass.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
   </head>
 
-<body>
-   <header>
-   
-    <div class="col s2">
-            <img id="cryptImage" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e44cc313-3c9e-4f84-ae23-3a3b7fa1c6a0/de2bbff-aaf80200-0624-4104-9f40-eb2a0e2f98d3.jpg/v1/fill/w_1920,h_1916,q_75,strp/crypt_keeper_by_kerast_de2bbff-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkxNiIsInBhdGgiOiJcL2ZcL2U0NGNjMzEzLTNjOWUtNGY4NC1hZTIzLTNhM2I3ZmExYzZhMFwvZGUyYmJmZi1hYWY4MDIwMC0wNjI0LTQxMDQtOWY0MC1lYjJhMGUyZjk4ZDMuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.uZLNmKqOG0EAW1QK1FEsgIaGl92JroKngxwtnwbfkJg" alt="cryptkeeper" class="circle responsive-img" >
-            <h1>The<br />Learning<br />Crypt</h1>
+  <body>
+    <div class="flex-column justify-space-around">
+      <header class="display-flex justify-space-between center-align p-2">
+        <h1>
+          <span role="img" aria-label="money">💸</span>
+          <a href="/">&#128178 LEARNING CRYPT &#128178</a>
+        </h1>
+        <nav>
+          <a href="/">Home</a>
+          {{#if loggedIn}}
+            <button id="logout" class="btn-no-style">Logout</button>
+          {{else}}
+            <a href="/login">Login</a>
+          {{/if}}
+        </nav>
+      </header>
+      <main class="container container-fluid mt-5">
+        <div class="gallery">
+          {{{body}}}
+        </div>
+      </main>
     </div>
-    </header>
-    <section>
-  <section>
-    <div class="">
-      {{{body}}}
-    </div>
-  </section>
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-</body>
+
+    <!-- Render script for logged in users only -->
+    {{#if logged_in}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
+  </body>
 
 </html>
