@@ -14,9 +14,9 @@ Content.hasOne(User, {
 });
 
 // Content has one categories
-Content.hasOne(Category, {
-  foreignKey: "content_id",
-});
+// Content.hasOne(Category, {
+//   foreignKey: "content_id",
+// });
 
 // // user can have many content/posts = one to many relationship
 // User.hasMany(Content, {

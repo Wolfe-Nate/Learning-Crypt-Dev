@@ -16,15 +16,19 @@ const { Content, Category } = require("../../models");
 
 router.get("/", async (req, res) => {
   //   try {
-  const contentData = await Content.findAll({
-    include: [{ model: Category }],
-  }).catch((err) => {
-    res.json(err);
-  });
+  const contentData = await Content
+    .findAll
+    //   {
+    //   include: [{ model: Category }],
+    // }
+    ()
+    .catch((err) => {
+      res.json(err);
+    });
 
-  const contents = contentData.map((content) => content.get({ plain: true }));
+  // const contents = contentData.map((content) => content.get({ plain: true }));
 
-  res.render("homepage", { contents });
+  res.render("homepage", { contentData });
   // res.status(200).json(contentData);
   //   catch (err) {
   //     res.status(500).json(err);
@@ -34,11 +38,15 @@ router.get("/", async (req, res) => {
 // GET Single piece of contant
 router.get("/:id", async (req, res) => {
   try {
-    const contentData = await Content.findByPk(req.params.id, {
-      include: [{ model: Category }],
-    }).catch((err) => {
-      res.json(err);
-    });
+    const contentData = await Content.findByPk(
+      req.params.id
+      //   {
+      //   include: [{ model: Category }],
+      // }
+    );
+    // .catch((err) => {
+    //   res.json(err);
+    // });
 
     res.status(200).json(contentData);
   } catch (err) {
