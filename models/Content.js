@@ -62,13 +62,13 @@ Content.init(
     //     key: "crypto_tech",
     //   },
     // },
-    category_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "category",
-        key: "id",
-      },
-    },
+    // category_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: "category",
+    //     key: "id",
+    //   },
+    // },
   },
   {
     sequelize,
