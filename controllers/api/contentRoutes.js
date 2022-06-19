@@ -2,18 +2,6 @@ const router = require("express").Router();
 const res = require("express/lib/response");
 const { Content, Category } = require("../../models");
 
-//GET/Content Route
-// router.get("/", async (req, res) => {
-//   try {
-//     const contentData = await Content.create();
-
-//     res.status(200).json(contentData);
-//   } catch (err) {
-//     console.log(err);
-//     res.status(500).json(err);
-//   }
-// });
-
 router.get("/", async (req, res) => {
   //   try {
   const contentData = await Content
