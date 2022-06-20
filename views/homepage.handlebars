@@ -1,10 +1,14 @@
 <a href="/"> Home | </a>
 {{#if loggedIn}}
-  <button id="logout" class="btn-no-style">Logout</button>
-  <button id="messageboard" class="btn-no-style">Message Board</button>
+  <a href="/" id="logout" class="btn-no-style"> Logout | </a>
+
+  {{!-- <button id="logout" class="btn-no-style">Logout</button> --}}
 {{else}}
-  <a href="/login">Login</a>
+  <a href="/login"> Login | </a>
 {{/if}}
+
+
+{{#if loggedIn}}
 
 <div>
   <ul class="collapsible entry">
@@ -416,12 +420,9 @@
     </li>
   </ul>
 </div>
-{{! <script src="./js/login.js"></script> }}
 
-{{!-- {{#each galleries as |gallery|}}
-{{> gallery-details}}
-{{/each}} --}}
-{{!-- {{#each learning as |learning|}}
-
-{{> learning.details}}
-{{/each}} --}}
+{{else}}
+<div class="image">
+  <img src="https://images.unsplash.com/photo-1609726494499-27d3e942456c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"> 
+</div>
+{{/if}}
