@@ -6,11 +6,12 @@
 2. [User Story](#user-story)
 3. [Acceptance Criteria](#acceptance-criteria)
 4. [Github Repository](#github-repository)
-5. [Gitignore](#gitignore-details)
-6. [Mock Up](#mock-up)
-7. [Technical Aspects](#technical-aspects)
-8. [Team Members](#team-members)
-9. [Resources](#resources)
+5. [Heroku Deployment](#heroku-deployment)
+6. [Gitignore](#gitignore-details)
+7. [Mock Up](#mock-up)
+8. [Technical Aspects](#technical-aspects)
+9. [Team Members](#team-members)
+10. [Resources](#resources)
 
 ## Description
 
@@ -29,6 +30,10 @@ The task is to create a restful API / full stack application. This application s
 
     https://github.com/Wolfe-Nate/Learning-Crypt-Dev
 
+## Heroku Deployment
+
+    https://thawing-mesa-35152.herokuapp.com
+
 ## Gitignore Details
 
     .env
@@ -40,6 +45,16 @@ The task is to create a restful API / full stack application. This application s
 <img src="public/images/WireFrameProj2.png">
 
 ## Technical Aspects
+
+    ✩HTML
+    ✩CSS
+    ✩Javascript
+    ✩HandleBars
+    ✩jQuery
+    ✩mySQL
+    ✩Session Storage
+    ✩Heroku Deployment
+    ✩Materialize
 
 ## Team Members
 
