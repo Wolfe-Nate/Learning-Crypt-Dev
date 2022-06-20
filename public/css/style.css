@@ -149,3 +149,7 @@ img {
   align-content: flex-start;
   align-items: center;
 }
+
+strong {
+  font-weight: bolder;
+}
