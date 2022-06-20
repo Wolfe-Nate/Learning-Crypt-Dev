@@ -22,9 +22,9 @@ const loginFormHandler = async (event) => {
 const signupFormHandler = async (event) => {
   event.preventDefault();
 
-  const username = document.querySelector("#username-signup").value.trim();
-  const email = document.querySelector("#email-signup").value.trim();
-  const password = document.querySelector("#password-signup").value.trim();
+  const username = document.querySelector("#username").value.trim();
+  const email = document.querySelector("#email").value.trim();
+  const password = document.querySelector("#password").value.trim();
 
   if (username && email && password) {
     const response = await fetch("/api/users", {
@@ -41,9 +41,15 @@ const signupFormHandler = async (event) => {
   }
 };
 
-document
-  .querySelector(".login-form")
-  .addEventListener("submit", loginFormHandler);
+document;
+// .querySelector(".login-form")
+// .addEventListener("submit", loginFormHandler)
+document.addEventListener("DOMContentLoaded", function () {
+  var elems = document.querySelectorAll(".collapsible");
+  var instances = M.Collapsible.init(elems, options);
+  instances.open(3);
+  console.log(instances);
+});
 
 document
   .querySelector(".signup-form")
