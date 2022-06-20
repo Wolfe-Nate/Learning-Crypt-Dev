@@ -1,20 +1,22 @@
- <a href="/">Home</a>
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    <button id="messageboard" class="btn-no-style">Message Board</button>
-    {{else}}
-    <a href="/login">Login</a>
-    {{/if}}
- 
+<a href="/">Home</a>
+{{#if loggedIn}}
+  <button id="logout" class="btn-no-style">Logout</button>
+  <button id="messageboard" class="btn-no-style">Message Board</button>
+{{else}}
+  <a href="/login">Login</a>
+{{/if}}
+
 <div>
-  <ul class="collapsible">
+  <ul class="collapsible entry">
     <li>
       <div class="collapsible-header"><i class="material-icons"></i>Basics</div>
       <div class="collapsible-body"><span>What is it? </span></div>
     </li>
 
     <li>
-      <div class="collapsible-header"><i class="material-icons"></i>History</div>
+      <div class="collapsible-header"><i
+          class="material-icons"
+        ></i>History</div>
       <div class="collapsible-body"><span>How it all got started</span></div>
     </li>
 
@@ -24,13 +26,16 @@
     </li>
 
     <li>
-      <div class="collapsible-header"><i class="material-icons"></i>Lexicon</div>
+      <div class="collapsible-header"><i
+          class="material-icons"
+        ></i>Lexicon</div>
       <div class="collapsible-body"><span>Words with definition</span></div>
-    </li>    
+    </li>
   </ul>
 </div>
+<script src="./js/login.js"></script>
 
- {{!-- {{#each galleries as |gallery|}}
+{{!-- {{#each galleries as |gallery|}}
 {{> gallery-details}}
 {{/each}} --}}
 {{!-- {{#each learning as |learning|}}
