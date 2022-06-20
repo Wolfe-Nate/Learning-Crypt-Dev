@@ -1,17 +1,19 @@
 const router = require("express").Router();
-const { User, Content } = require("../models");
+const { User, Content, Category } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
   try {
-    const contentData = await Content.findAll();
-    //   {
-    //   include: [
-    //     {
-    //       model: Category,
-    //     },
-    //   ],
-    // }
+    const contentData = await Content
+      .findAll
+      //   {
+      //   include: [
+      //     {
+      //       model: Category,
+      //     },
+      //   ],
+      // }
+      ();
 
     const contents = contentData.map((content) => content.get({ plain: true }));
 
