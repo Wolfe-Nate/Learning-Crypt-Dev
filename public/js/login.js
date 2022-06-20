@@ -45,6 +45,12 @@ const signupFormHandler = async (event) => {
 document
   .querySelector(".login-form")
   .addEventListener("submit", loginFormHandler);
+// document.addEventListener("DOMContentLoaded", function () {
+//   var elems = document.querySelectorAll(".collapsible");
+//   var instances = M.Collapsible.init(elems, options);
+//   instances.open(3);
+//   console.log(instances);
+// });
 
 document
   .querySelector(".signup-form")
