@@ -47,7 +47,7 @@ main {
   z-index: 1;
 }
 
-.starButton {
+#starButton {
   margin: 25px 25px 25px 25px;
 }
 
