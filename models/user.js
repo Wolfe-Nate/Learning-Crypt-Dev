@@ -52,3 +52,5 @@ User.init(
 );
 
 module.exports = User;
+
+//user
