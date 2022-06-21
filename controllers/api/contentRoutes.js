@@ -2,6 +2,7 @@ const router = require("express").Router();
 const res = require("express/lib/response");
 const { Content } = require("../../models");
 
+//localhost:3001/api/content
 router.get("/", async (req, res) => {
   //   try {
   const contentData = await Content
