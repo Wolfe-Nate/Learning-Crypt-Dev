@@ -1,11 +1,11 @@
 //prevent event spread? Right term?
-async function newContentHandler(event) {
+const newContentHandler = async (event) => {
   event.preventDefault();
 
-  // get values from input boxes
-  const content_url = document.querySelector("#content_url").value;
-  const content_title = document.querySelector("#content_title").value;
-  const content_desc = document.querySelector("#content_desc").value;
+  // IDs to get values from input boxes
+  const content_url = document.querySelector("#content_url").value.trim();
+  const content_title = document.querySelector("#content_title").value.trim();
+  const content_desc = document.querySelector("#content_desc").value.trim();
 
   // send fetch requst to our API
   const response = await fetch(`/api/content`, {
@@ -26,8 +26,9 @@ async function newContentHandler(event) {
   } else {
     alert("Failed to add article");
   }
-}
+};
 
+//
 document
   .querySelector(".new-article-form")
   .addEventListener("submit", newContentHandler);
