@@ -43,6 +43,8 @@ The task is to create a restful API / full stack application. This application s
 ## Mock Up
 
 <img src="public/images/WireFrameProj2.png">
+<img src="public/images/image (1).png">
+<img src="public/images/image (2).png">
 
 ## Technical Aspects
 
