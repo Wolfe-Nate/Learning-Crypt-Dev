@@ -4,17 +4,7 @@ const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
   try {
-    const contentData = await Content
-      .findAll
-      //   {
-      //   include: [
-      //     {
-      //       model: Category,
-      //     },
-      //   ],
-      // }
-      ();
-
+    const contentData = await Content.findAll();
     const contents = contentData.map((content) => content.get({ plain: true }));
 
     res.render("homepage", {
