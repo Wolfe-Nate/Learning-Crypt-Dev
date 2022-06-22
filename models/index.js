@@ -1,7 +1,7 @@
 const User = require("./User");
 const Content = require("./Content");
 //const Category = require("./Category");
-const Vote = require("./Vote");
+// const Vote = require("./Vote");
 // const Basics = require("./Basics");
 // const Lexicon = require("./Lexicon");
 // const People = require("./People");
@@ -9,7 +9,7 @@ const Vote = require("./Vote");
 // content belongs to a user - one to one relationshiop
 // content is going to be the source model, pass to has one is the target model, the foreignKey is defined in the target model
 Content.hasOne(User, {
-  foreignKey: "content_id",
+  foreignKey: "user_id",
   onDelete: "CASCADE",
 });
 
@@ -19,10 +19,10 @@ Content.hasOne(User, {
 // });
 
 // // user can have many content/posts = one to many relationship
-// User.hasMany(Content, {
-//   foreignKey: "user_id",
-//   onDelete: "CASCADE",
-// });
+User.hasMany(Content, {
+  foreignKey: "user_id",
+  onDelete: "CASCADE",
+});
 
 // // content belongs to many upvotes = (contentTracker)
 // Content.belongsToMany(User, {
@@ -40,4 +40,4 @@ Content.hasOne(User, {
 //   },
 // });
 
-module.exports = { User, Content, Vote };
+module.exports = { User, Content };

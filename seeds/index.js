@@ -21,9 +21,10 @@ const seedAll = async () => {
   await sequelize.sync({ force: true });
 
   await seedUser();
+  console.log("\n-----------------DATABASE SYNCED -----------------\n");
 
   await seedContent();
-
+  console.log("\n ------------------DATABASE SYNCED --------------\n");
   // await seedCategory();
 
   process.exit(0);
