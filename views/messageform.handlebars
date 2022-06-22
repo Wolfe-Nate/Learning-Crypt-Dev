@@ -1,0 +1,50 @@
+{{!-- {{/each}} --}}
+  <!-- This is the form for adding a new dish -->
+  <div class="add-message-container">
+    <h2>
+      Post Your Article Here
+    </h2>
+    <form class="new-message-form">
+      <label for="title">
+        Message Title:
+      </label>
+      <br />
+      <textarea id="title" name="title" rows="2" cols="30">
+      {{title}}
+    </textarea>
+      <br />
+      <label for="description">
+        Brief Description of Article:
+      </label>
+      <br />
+      <textarea id="description" name="description" rows="5" cols="30">
+      {{description}}
+    </textarea>
+      <br />
+      <label for="article_url">
+        Article Link / URL:
+      </label>
+      <br />
+      <textarea id="article_url" name="article_url" rows="2" cols="30">
+      {{article_url}}
+    </textarea>
+      <br />
+      <br />
+      {{!-- {{#if }}
+      <input type="checkbox" id="" name="" checked />
+      {{else}}
+      <input type="checkbox" id="" name="" />
+      {{/if}}
+      <label for="">
+        Check box if this message is Bitcoin-related
+      </label> --}}
+      <br />
+      <button type="submit" value="Submit">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<script src="/js/addContent.js"></script>
+
