@@ -17,7 +17,7 @@ router.get("/", async (req, res) => {
 
   // const contents = contentData.map((content) => content.get({ plain: true }));
 
-  res.render("homepage", { contentData });
+  res.render("messageform", { contentData });
   // res.status(200).json(contentData);
   //   catch (err) {
   //     res.status(500).json(err);
