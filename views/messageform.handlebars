@@ -4,40 +4,39 @@
     <h2>
       Post Your Article Here
     </h2>
-    <form class="new-article-form">
-      <label for="title">
+    <form class="new-message-form">
+      <label for="content_title">
         Message Title:
       </label>
       <br />
-      <textarea id="title" name="title" rows="2" cols="30">
+      <textarea id="content_title" name="title" rows="2" cols="30">
       {{title}}
     </textarea>
       <br />
-      <label for="description">
+      <label for="content_desc">
         Brief Description of Article:
       </label>
       <br />
-      <textarea id="description" name="description" rows="5" cols="30">
+      <textarea id="content_desc" name="description" rows="5" cols="30">
       {{description}}
     </textarea>
       <br />
-      <label for="article_url">
-        Article Link / URL:
+      <label for="content_url">
+        Article / URL:
       </label>
       <br />
-      <textarea id="article_url" name="article_url" rows="2" cols="30">
+      <textarea id="content_url" name="article_url" rows="2" cols="30">
       {{article_url}}
     </textarea>
       <br />
       <br />
-      {{!-- {{#if }}
+
+      {{!-- {{!-- {{#if }}
       <input type="checkbox" id="" name="" checked />
       {{else}}
       <input type="checkbox" id="" name="" />
-      {{/if}}
-      <label for="">
-        Check box if this message is Bitcoin-related
-      </label> --}}
+      {{/if}} --}}
+
       <br />
       <button type="submit" value="Submit">
         Submit
