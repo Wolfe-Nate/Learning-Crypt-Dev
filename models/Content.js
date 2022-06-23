@@ -14,10 +14,10 @@ Content.init(
     article_url: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
-      validate: {
-        isUrl: true,
-      },
+      //unique: true,
+      // validate: {
+      //   isUrl: true,
+      // },
     },
     title: {
       type: DataTypes.STRING,

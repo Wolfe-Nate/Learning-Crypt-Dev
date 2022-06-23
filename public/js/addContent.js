@@ -8,23 +8,25 @@ const newContentHandler = async (event) => {
   const content_desc = document.querySelector("#content_desc").value.trim();
 
   // send fetch requst to our API
-  const response = await fetch(`/api/content`, {
-    method: "POST",
-    body: JSON.stringify({
-      content_url,
-      content_title,
-      content_desc,
-    }),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+  if (content_url && content_title && content_desc) {
+    const response = await fetch("/api/content", {
+      method: "POST",
+      body: JSON.stringify({
+        content_url,
+        content_title,
+        content_desc,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
 
-  // if article is added correctly, the 'all' template will be rendered?
-  if (response.ok) {
-    document.location.replace("/");
-  } else {
-    alert("Failed to add article");
+    // if article is added correctly, the 'all' template will be rendered?
+    if (response.ok) {
+      document.location.replace("/");
+    } else {
+      alert("Failed to add article");
+    }
   }
 };
 
