@@ -1,9 +1,23 @@
 {{!-- {{/each}} --}}
   <!-- This is the form for adding a new dish -->
+    <div class="container center-align">
+
+      <nav>
+        <div id="navbar" class="nav-wrapper center-align light-green accent-3">
+        <a href="#" class="brand-logo">MessageBoard</di>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="C:\Users\keith\OneDrive\Desktop\test_mater\learning.html">LearningCenter</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+        <br>
+      </div>
+  
+  
   <div class="add-message-container">
-    <h2>
+    <h4>
       Post Your Article Here
-    </h2>
+    </h4>
     <form class="new-article-form" action="/api/content" method="POST">
       <label for="content_title">
         Message Title:
@@ -42,8 +56,30 @@
         Submit
       </button>
     </form>
+
+
   </div>
 </div>
+
+
+      {{#each table}}
+      <main class="container center-align">
+        <div class="col s12 m7  center-align">
+          <h2 class="header white-text">{{{user-name}}}</h2>
+          <div class="card horizontal">
+           
+            <div class="card-stacked ">
+              <div class="card-content">
+                {{!-- <p>{{{#}}}</p> --}}
+              </div> 
+              <!-- <div class="card-action"> -->
+                
+              </div>
+            </div>
+          </div>
+          <a id="starButton" class="waves-effect  waves-light btn"><span class="material-symbols-outlined">grade</span></i>button</a>
+        </main>
+      {{/each}}
 
 {{!-- <script src="/js/addContent.js"></script> --}}
 
